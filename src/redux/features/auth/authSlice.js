@@ -8,13 +8,10 @@ const initialState = {
     name: "",
     email: "",
     phone: "",
-<<<<<<< HEAD
     Bio: "",
     image: "",
-=======
     bio: "",
     photo: "",
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
   },
   userID: "",
 };
@@ -35,13 +32,10 @@ const authSlice = createSlice({
       state.user.name = profile.name;
       state.user.email = profile.email;
       state.user.phone = profile.phone;
-<<<<<<< HEAD
       state.user.Bio = profile.Bio;
       state.user.image = profile.image;
-=======
       state.user.bio = profile.bio;
       state.user.photo = profile.photo;
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
     },
   },
 });

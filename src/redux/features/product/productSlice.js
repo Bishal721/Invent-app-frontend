@@ -60,7 +60,6 @@ export const deleteProducts = createAsyncThunk(
     }
   }
 );
-<<<<<<< HEAD
 // Get a Single Product
 export const getProduct = createAsyncThunk(
   "products/getProduct",
@@ -91,8 +90,6 @@ export const updateProduct = createAsyncThunk(
     }
   }
 );
-=======
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
 
 const productSlice = createSlice({
   name: "product",
@@ -179,13 +176,12 @@ const productSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
-<<<<<<< HEAD
         state.products = state.products.filter(
           (product) => product._id !== action.payload
         );
-=======
-        state.products = state.products.filter(product => product._id !== action.payload);
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
+        state.products = state.products.filter(
+          (product) => product._id !== action.payload
+        );
         toast.success("Product Deleted Successfully");
       })
       .addCase(deleteProducts.rejected, (state, action) => {
@@ -193,7 +189,6 @@ const productSlice = createSlice({
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
-<<<<<<< HEAD
       })
       //Get Product
       .addCase(getProduct.pending, (state) => {
@@ -226,8 +221,6 @@ const productSlice = createSlice({
         state.isError = true;
         state.message = action.payload;
         toast.error(action.payload);
-=======
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
       });
     //
   },
@@ -238,11 +231,8 @@ export const { CALC_STORE_VALUE, CALC_OUTOFSTOCK, CALC_Category } =
 
 export const selectIsLoading = (state) => state.product.isLoading;
 
-<<<<<<< HEAD
 export const selectProduct = (state) => state.product.product;
 
-=======
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
 export const selectTotalStoreValue = (state) => state.product.totalStoreValue;
 
 export const selectOutOfStock = (state) => state.product.OutOfStock;

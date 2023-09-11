@@ -96,7 +96,6 @@ export const resetPassword = async (userData, resetToken) => {
 //Get Login Status
 export const GetLoginStatus = async () => {
   try {
-<<<<<<< HEAD
     const response = await axios.get(`${BACKEND_URL}/api/users/loggedin`);
     return response.data;
   } catch (error) {
@@ -137,15 +136,11 @@ export const updateUser = async (formData) => {
   }
 };
 //Change Password
-export const ChangeUserPassword = async (formData) => {   
+export const ChangeUserPassword = async (formData) => {
   try {
     const response = await axios.patch(
       `${BACKEND_URL}/api/users/changepassword`,
       formData
-=======
-    const response = await axios.get(
-      `${BACKEND_URL}/api/users/loggedin`,
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
     );
     return response.data;
   } catch (error) {

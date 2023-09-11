@@ -22,11 +22,8 @@ const menu = [
       },
       {
         title: "Edit Profile",
-<<<<<<< HEAD
         path: "/edit-profile",
-=======
         path: "/profile-update",
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
       },
     ],
   },

@@ -16,10 +16,7 @@ import {
   deleteProducts,
   getProducts,
 } from "../../../redux/features/product/productSlice";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
-=======
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
 
 const ProductList = ({ products, isLoading }) => {
   const [search, setSearch] = useState("");
@@ -135,7 +132,6 @@ const ProductList = ({ products, isLoading }) => {
                       </td>
                       <td className="icons">
                         <span>
-<<<<<<< HEAD
                           <Link to={`/product-detail/${_id}`}>
                             <AiOutlineEye size={20} color={"purple"} />
                           </Link>
@@ -144,12 +140,10 @@ const ProductList = ({ products, isLoading }) => {
                           <Link to={`/edit-products/${_id}`}>
                             <FaEdit size={20} color={"green"} />
                           </Link>
-=======
                           <AiOutlineEye size={20} color={"purple"} />
                         </span>
                         <span>
                           <FaEdit size={20} color={"green"} />
->>>>>>> 2cbd6d8a01c307383dd3d965eee33fb031a8a2ed
                         </span>
                         <span>
                           <FaTrashAlt
