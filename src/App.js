@@ -102,7 +102,7 @@ function App() {
             </SideBar>
           }
         />
-        <Routes
+        <Route
           path="/contact-us"
           element={
             <SideBar>
