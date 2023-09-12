@@ -140,10 +140,6 @@ const ProductList = ({ products, isLoading }) => {
                           <Link to={`/edit-products/${_id}`}>
                             <FaEdit size={20} color={"green"} />
                           </Link>
-                          <AiOutlineEye size={20} color={"purple"} />
-                        </span>
-                        <span>
-                          <FaEdit size={20} color={"green"} />
                         </span>
                         <span>
                           <FaTrashAlt
